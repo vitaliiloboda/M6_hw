@@ -2,9 +2,230 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Kaushan Script', cursive; */
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1201px;
+  margin: 0 auto;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 110px;
+  align-items: flex-end;
+}
+
+.site-logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #95e1d3;
+  text-decoration: none;
+}
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  width: 491px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav-list-item {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #95e1d3;
+  text-transform: uppercase;
+}
+/* 
+.services {
+  margin-bottom: ;
+} */
+
+.sevices-pre-title, .team-pre-title {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #333333;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.services-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1182px;
+  margin: 0;
+  padding: 0;
+  margin-top: 64px;
+}
+
+.services-list-item {
+  background-color: lightblue;
+  flex: 0 0 301px;
+}
+
+.services-list-item:not(:nth-last-child(-n+3)) {
+  margin-bottom: 98px;
+}
 
 
+.services-list-item-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  text-transform: uppercase;
+}
 
+.services-list-item-description, .team-description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.team {
+  margin-top: 88px;
+}
+
+.team-description {
+  text-align: center;
+  margin-top: 42px;
+  margin-bottom: 90px;
+}
+
+.team-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.team-list-item-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.team-list-item-position {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 24px;
+  color: #999999;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(231, 231, 231);
+  margin-top: 82px;
+  height: 82px;
+  margin-bottom: 5px;
+}
+
+.site-info {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  /* margin-top: 24px;
+  margin-bottom: 26px; */
+}
+
+.template-by {
+  text-decoration: none;
+  color: #f38181;
+}
+
+.subscribtion {
+  display: flex;
+  height: 40px;
+  /* margin-top: 11px; */
+  /* border: 1px solid rgb(231, 231, 231); */
+  /* margin-bottom: 11px; */
+}
+
+.subscribtion-button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: #95e1d3;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid rgb(231, 231, 231);
+  /* border: none; */
+  width: 150px;
+  height: 40px;
+  text-align: center;
+}
+
+  .input-email {
+  width: 230px;
+  height: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px;
+  color: #cccccc;
+  border: 1px solid rgb(231, 231, 231);
+  border-right: none;
+  padding: 12px;
+  /* border: none; */
+}
 
 
 /* visually-hidden helper */
