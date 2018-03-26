@@ -45,13 +45,33 @@ img {
   padding: 0;
 }
 
-.main-nav-list-item {
+.main-nav-list-item a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #95e1d3;
   text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  transition: color 200ms linear;
+}
+
+/*  HOVER AND FOCUS*/
+.main-nav-list-item a:hover::after,
+.main-nav-list-item a:focus::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #f38181;
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+}
+
+.main-nav-list-item a:hover,
+.main-nav-list-item a:focus  {
+  color: #fce38a;
 }
 
 .sevices-pre-title, .team-pre-title {
@@ -83,7 +103,6 @@ h2::after {
   height: 3px;
   background-color: #f38181;
   display: block;
-  text-align: center;
   margin-left: 570px;
   margin-top: 40px;
 }
@@ -208,6 +227,87 @@ h2::after {
   text-align: center;
 }
 
+
+/* SOCIALS */
+.team-list-item {
+  position: relative;
+}
+
+.team-list-item-socials {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* display: flex; */
+  display: none;
+  position: absolute;
+  top: 197px;
+  left: 69px;
+}
+
+.team-list-item-socials a {
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(252, 227, 138);
+
+}
+
+.icon-facebook {
+  background-image: url("../img/social/facebook.png");
+  border-right: 1px solid rgb(243, 129, 129);
+}
+
+.icon-twitter {
+  background-image: url("../img/social/twitter.png");
+  border-right: 1px solid rgb(243, 129, 129);
+}
+
+.icon-pinterest {
+  background-image: url("../img/social/pinterest.png");
+  border-right: 1px solid rgb(243, 129, 129);
+}
+
+.icon-instagram {
+  background-image: url("../img/social/instagram.png");  
+}
+
+.team-list-item::after {
+  content: "";
+  width: 380px;
+  height: 470px;
+  background-color: #95e1d3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* TEAM ITEM HOVER */
+.team-list-item:hover .img-container {
+  transform: translate(-10px, -10px);
+  background-image: linear-gradient(
+    to top,
+    #fce38a,
+    #f38181
+  );
+}
+
+.team-list-item:hover .team-list-item-img {
+  opacity: 0.1;
+}
+
+.team-list-item:hover .team-list-item-socials {
+  display: flex;
+}
+
+.team-list-item-socials-item a:hover {
+  background-color: #95e1d3;
+}
+
+
+/* FOOTER */
 .page-footer {
   display: flex;
   justify-content: space-between;
