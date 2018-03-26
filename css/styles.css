@@ -231,13 +231,13 @@ h2::after {
 /* SOCIALS */
 .team-list-item {
   position: relative;
+  /* transition: all 20s linear; */
 }
 
 .team-list-item-socials {
   list-style: none;
   margin: 0;
   padding: 0;
-  /* display: flex; */
   display: none;
   position: absolute;
   top: 197px;
@@ -251,7 +251,11 @@ h2::after {
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgb(252, 227, 138);
+  transition: all 200ms linear; 
+}
 
+.img-container {
+  transition: all 200ms linear; 
 }
 
 .icon-facebook {
@@ -305,7 +309,6 @@ h2::after {
 .team-list-item-socials-item a:hover {
   background-color: #95e1d3;
 }
-
 
 /* FOOTER */
 .page-footer {
